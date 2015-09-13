@@ -12,7 +12,7 @@ cd jspm-setup
 npm install --global jspm
 
 # Instale as dependências
-npm install && jspm install
+npm install
 
 # Gera arquivo de build
 npm run bundle
