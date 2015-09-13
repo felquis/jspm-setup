@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ./ -o",
+    "start": "http-server ./src -o",
     "bundle": "jspm bundle lib/main --inject"
   },
   "author": "",
@@ -15,7 +15,9 @@
     "jspm": "^0.16.2"
   },
   "jspm": {
-    "directories": {},
+    "directories": {
+      "baseURL": "src"
+    },
     "dependencies": {
       "jquery": "github:components/jquery@^2.1.4"
     },
